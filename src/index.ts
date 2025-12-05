@@ -6,4 +6,4 @@ import type { GitHubUser } from "./schema.ts";
 const user: string = getUser();
 const githubUser: GitHubUser = await getGithubUser(user);
 
-console.log(chalk.green(`${githubUser.name} has ${githubUser.followers} followers`))
+console.log(chalk.green(`[+] ${githubUser.name ?? "Unknown"} has ${githubUser.followers} followers`))
